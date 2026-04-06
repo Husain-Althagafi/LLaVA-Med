@@ -1,0 +1,10 @@
+{"image": "data/images/img_0.png", "label_code": 0, "label": "no_diabetic_retinopathy"}
+{"image": "data/images/img_1.png", "label_code": 0, "label": "no_diabetic_retinopathy"}
+{"image": "data/images/img_2.png", "label_code": 0, "label": "no_diabetic_retinopathy"}
+{"image": "data/images/img_3.png", "label_code": 0, "label": "no_diabetic_retinopathy"}
+{"image": "data/images/img_4.png", "label_code": 1, "label": "mild_retinopathy"}
+{"image": "data/images/img_5.png", "label_code": 2, "label": "moderate_retinopathy"}
+{"image": "data/images/img_6.png", "label_code": 4, "label": "proliferative_retinopathy"}
+{"image": "data/images/img_7.png", "label_code": 4, "label": "proliferative_retinopathy"}
+{"image": "data/images/img_8.png", "label_code": 0, "label": "no_diabetic_retinopathy"}
+{"image": "data/images/img_9.png", "label_code": 1, "label": "mild_retinopathy"}
