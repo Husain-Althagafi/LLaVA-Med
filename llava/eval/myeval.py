@@ -61,6 +61,9 @@ class LLaVABaseWrapper:
                 
         output = self.model.generate(**inputs, max_new_tokens=400, do_sample=False)
         return self.processor.decode(output[0][2:], skip_special_tokens=True)
+
+
+
    
 
 
