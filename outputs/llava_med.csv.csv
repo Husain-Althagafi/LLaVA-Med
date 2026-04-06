@@ -1,0 +1,61 @@
+image,label,prompt,response
+data/vlmdata/img_0.png,no_diabetic_retinopathy,"[INST] <image>
+Describe this ophthalmic image briefly. [/INST]","The ophthalmic image is a fundus photograph, which is a photograph of the retina, the back part of the eye. In this image, there is a small, round, yellowish lesion located in the right temporal retina. The lesion is visible as a distinct area in the image."
+data/vlmdata/img_0.png,no_diabetic_retinopathy,"[INST] <image>
+What abnormalities are visible? If none are visible, say so clearly. [/INST]",The image shows no visible abnormalities.
+data/vlmdata/img_0.png,no_diabetic_retinopathy,"[INST] <image>
+Give the most likely diagnosis and a one-sentence justification based only on visible evidence. [/INST]","Based on the visible evidence, the most likely diagnosis is a choroidal melanoma. This is because the image shows a pigmented lesion in the right eye, which is consistent with a choroidal melanoma."
+data/vlmdata/img_1.png,no_diabetic_retinopathy,"[INST] <image>
+Describe this ophthalmic image briefly. [/INST]","This ophthalmic image is a fundus photograph, which is a type of retinal examination. It provides a detailed view of the retina, the light-sensitive tissue at the back of the eye. The image is taken using a fundus camera, which is a specialized instrument that captures the image through the pupil of the eye. The fundus photograph can help identify various retinal abnormalities, such as macular degeneration, retinal detachment, or other retinal diseases."
+data/vlmdata/img_1.png,no_diabetic_retinopathy,"[INST] <image>
+What abnormalities are visible? If none are visible, say so clearly. [/INST]",The fundus examination of the right eye shows no abnormalities.
+data/vlmdata/img_1.png,no_diabetic_retinopathy,"[INST] <image>
+Give the most likely diagnosis and a one-sentence justification based only on visible evidence. [/INST]","Based on the visible evidence, the most likely diagnosis is a choroidal melanoma. This is because the image shows a pigmented lesion in the choroid, which is a characteristic feature of choroidal melanoma."
+data/vlmdata/img_2.png,no_diabetic_retinopathy,"[INST] <image>
+Describe this ophthalmic image briefly. [/INST]","This ophthalmic image is a color fundus photograph, which is a type of retinal imaging technique used to visualize the back of the eye. The image shows a small, round, and well-defined lesion in the right eye. The lesion appears to be hyperreflective, meaning it reflects more light than the surrounding tissue, and it is located in the posterior pole of the eye."
+data/vlmdata/img_2.png,no_diabetic_retinopathy,"[INST] <image>
+What abnormalities are visible? If none are visible, say so clearly. [/INST]",The image shows no visible abnormalities.
+data/vlmdata/img_2.png,no_diabetic_retinopathy,"[INST] <image>
+Give the most likely diagnosis and a one-sentence justification based only on visible evidence. [/INST]","Based on the visible evidence, the most likely diagnosis is a choroidal melanoma. This is because the image shows a pigmented lesion in the choroid, which is a characteristic feature of choroidal melanoma."
+data/vlmdata/img_3.png,no_diabetic_retinopathy,"[INST] <image>
+Describe this ophthalmic image briefly. [/INST]","This ophthalmic image is a fundus photograph, which is a type of retinal image that provides a detailed view of the back of the eye. The image shows a normal retina, with no visible abnormalities or pathological changes. The retina appears to be healthy and free of any significant issues."
+data/vlmdata/img_3.png,no_diabetic_retinopathy,"[INST] <image>
+What abnormalities are visible? If none are visible, say so clearly. [/INST]",The image shows no visible abnormalities.
+data/vlmdata/img_3.png,no_diabetic_retinopathy,"[INST] <image>
+Give the most likely diagnosis and a one-sentence justification based only on visible evidence. [/INST]","Based on the visible evidence, the most likely diagnosis is a retinal detachment. This is because the image shows a retinal detachment with a subretinal fluid collection and a subretinal hyperreflective area."
+data/vlmdata/img_4.png,mild_retinopathy,"[INST] <image>
+Describe this ophthalmic image briefly. [/INST]","This ophthalmic image is a fundus photograph, which is a visual representation of the back of the eye. It is taken using a retinal camera, which is a specialized instrument designed to capture high-resolution images of the retina and surrounding structures. The image provides a detailed view of the retina, optic disc, and other structures within the eye, allowing for the identification of any abnormalities or changes in the eye's anatomy."
+data/vlmdata/img_4.png,mild_retinopathy,"[INST] <image>
+What abnormalities are visible? If none are visible, say so clearly. [/INST]",The image shows no visible abnormalities.
+data/vlmdata/img_4.png,mild_retinopathy,"[INST] <image>
+Give the most likely diagnosis and a one-sentence justification based only on visible evidence. [/INST]","Based on the visible evidence, the most likely diagnosis is a choroidal melanoma."
+data/vlmdata/img_5.png,moderate_retinopathy,"[INST] <image>
+Describe this ophthalmic image briefly. [/INST]","This ophthalmic image is a retinal photograph, which is a visual representation of the retina, the light-sensitive tissue at the back of the eye. The image is taken using a retinal camera, which is a specialized imaging device designed to capture high-resolution images of the retina. The photograph can help healthcare professionals assess the structure and function of the retina, as well as identify any abnormalities or changes that may be indicative of a disease or condition."
+data/vlmdata/img_5.png,moderate_retinopathy,"[INST] <image>
+What abnormalities are visible? If none are visible, say so clearly. [/INST]","The image shows multiple abnormalities, including a macular lesion, a subretinal hemorrhage, and a subretinal cystoid space."
+data/vlmdata/img_5.png,moderate_retinopathy,"[INST] <image>
+Give the most likely diagnosis and a one-sentence justification based only on visible evidence. [/INST]","Based on the visible evidence, the most likely diagnosis is a choroidal melanoma. Choroidal melanoma is a type of eye cancer that develops in the choroid, which is the layer of blood vessels and connective tissue between the retina and the sclera (the white outer layer of the eye)."
+data/vlmdata/img_6.png,proliferative_retinopathy,"[INST] <image>
+Describe this ophthalmic image briefly. [/INST]","This ophthalmic image is a fundus photograph, which is a photograph of the retina and optic nerve of the eye. The image is taken using a 35 mm camera and a 50 mm lens. The fundus photograph provides a detailed view of the eye's internal structures, allowing for the identification of any abnormalities or changes in the retina and optic nerve."
+data/vlmdata/img_6.png,proliferative_retinopathy,"[INST] <image>
+What abnormalities are visible? If none are visible, say so clearly. [/INST]",The fundus examination of the right eye shows no abnormalities.
+data/vlmdata/img_6.png,proliferative_retinopathy,"[INST] <image>
+Give the most likely diagnosis and a one-sentence justification based only on visible evidence. [/INST]","Based on the visible evidence, the most likely diagnosis is a retinal detachment. This is because the image shows a retinal detachment in the right eye, which is a separation of the retina from the underlying supportive tissue."
+data/vlmdata/img_7.png,proliferative_retinopathy,"[INST] <image>
+Describe this ophthalmic image briefly. [/INST]","This ophthalmic image is a fundus photograph, which is a photograph of the retina and optic nerve in the eye. The image shows a normal retina, which means that there are no visible signs of abnormalities or disease in the retina. The optic nerve appears to be normal as well."
+data/vlmdata/img_7.png,proliferative_retinopathy,"[INST] <image>
+What abnormalities are visible? If none are visible, say so clearly. [/INST]",The image shows no abnormalities in the retina.
+data/vlmdata/img_7.png,proliferative_retinopathy,"[INST] <image>
+Give the most likely diagnosis and a one-sentence justification based only on visible evidence. [/INST]","Based on the visible evidence, the most likely diagnosis is a retinal hemangioma."
+data/vlmdata/img_8.png,no_diabetic_retinopathy,"[INST] <image>
+Describe this ophthalmic image briefly. [/INST]","This ophthalmic image is a retinal angiogram, which is a type of imaging technique used to visualize the blood vessels in the retina. The image shows a large, well-defined, and homogenous lesion in the right eye. The lesion appears to be occupying the entire macula, which is the central part of the retina responsible for sharp, central vision."
+data/vlmdata/img_8.png,no_diabetic_retinopathy,"[INST] <image>
+What abnormalities are visible? If none are visible, say so clearly. [/INST]",The image shows no abnormalities.
+data/vlmdata/img_8.png,no_diabetic_retinopathy,"[INST] <image>
+Give the most likely diagnosis and a one-sentence justification based only on visible evidence. [/INST]","Based on the visible evidence, the most likely diagnosis is a retinal hemangioma. A retinal hemangioma is a benign vascular tumor that occurs in the retina, the light-sensitive tissue at the back of the eye."
+data/vlmdata/img_9.png,mild_retinopathy,"[INST] <image>
+Describe this ophthalmic image briefly. [/INST]","This ophthalmic image is a fundus photograph, which is a type of retinal examination. It provides a visual representation of the retina, the light-sensitive tissue at the back of the eye. The image is taken using a fundus camera, which is a specialized instrument that captures the image through the pupil of the eye. The fundus photograph can help identify various retinal abnormalities, such as macular degeneration, retinal detachment, or other retinal diseases."
+data/vlmdata/img_9.png,mild_retinopathy,"[INST] <image>
+What abnormalities are visible? If none are visible, say so clearly. [/INST]",The image shows no abnormalities in the retina.
+data/vlmdata/img_9.png,mild_retinopathy,"[INST] <image>
+Give the most likely diagnosis and a one-sentence justification based only on visible evidence. [/INST]","Based on the visible evidence, the most likely diagnosis is a choroidal melanoma. This is because the image shows a pigmented lesion in the choroid, which is a characteristic feature of choroidal melanoma."

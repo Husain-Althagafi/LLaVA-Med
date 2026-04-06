@@ -5,6 +5,8 @@ from llava.utils import disable_torch_init
 from llava.mm_utils import tokenizer_image_token, get_model_name_from_path, KeywordsStoppingCriteria, process_images
 from llava.model.builder import load_pretrained_model
 
+from llava.eval.wrappers.llava_base import LLaVABaseWrapper
+
 import argparse
 import torch
 import os
@@ -19,10 +21,47 @@ import pandas as pd
 OUTPUT_PATH = 'outputs'
 
 PROMPTS = [
-    "Describe this ophthalmic image briefly. Answer in json format like this: {'Description': 'your description', 'Diagnosis': 'diagnosis label'}",
-    "What abnormalities are visible? If none are visible, say so clearly. Answer in json format like this: {'Description': 'your description', 'Diagnosis': 'diagnosis label'}",
-    "Give the most likely diagnosis and a one-sentence justification based only on visible evidence. Answer in json format like this: {'Description': 'your description', 'Diagnosis': 'diagnosis label'}"
+    "Describe this ophthalmic image briefly.",
+    "What abnormalities are visible? If none are visible, say so clearly.",
+    "Give the most likely diagnosis and a one-sentence justification based only on visible evidence."
 ]
+
+
+from transformers import AutoProcessor, LlavaForConditionalGeneration
+import torch
+
+
+class LLaVABaseWrapper:
+    def __init__(self, model_id):
+        self.model = LlavaForConditionalGeneration.from_pretrained(
+            model_id, 
+            dtype=torch.float16,
+            low_cpu_mem_usage=True
+        ).to('cuda')
+
+        self.processor = AutoProcessor.from_pretrained(model_id)
+
+    
+    def generate(self, image, text):
+        conversation = [
+            {
+
+            "role": "user",
+            "content": [
+                {"type": "text", "text": text},
+                {"type": "image"},
+                ],
+            },
+        ]
+
+        prompt = self.processor.apply_chat_template(conversation, add_generation_prompt=True)
+
+        inputs = self.processor(images=image, text=prompt, return_tensors='pt').to(0, torch.float16)
+
+                
+        output = self.model.generate(**inputs, max_new_tokens=400, do_sample=False)
+        return self.processor.decode(output[0][2:], skip_special_tokens=True)
+   
 
 
 def load_image(path):
@@ -40,7 +79,7 @@ def load_manifest(path):
 
 def save_to_csv(results, file_name):    
     df = pd.DataFrame(results)
-    df.to_csv(f"outputs/{file_name}", index=False)
+    df.to_csv(f"outputs/{file_name}.csv", index=False)
 
 
 def run_eval(data, tokenizer, model, image_processor, context_len):
@@ -90,10 +129,13 @@ def run_eval(data, tokenizer, model, image_processor, context_len):
                 "prompt": prompt,
                 "response": outputs
             })
+        
+    return results
 
 
 def parse_args():
     parser = argparse.ArgumentParser()
+    parser.add_argument('--model_type', type=str, default='med')
     parser.add_argument('--model_path', type=str, default='/work/vlmwork/LLaVA-Med/llavamodel')
     parser.add_argument('--model_base', type=str, default=None)
     parser.add_argument('--model_name', type=str, default='llava-med-v1.5-mistral-7b')
@@ -112,7 +154,7 @@ def main():
             model_path=args.model_path,
             model_base=args.model_base,
             model_name=args.model_name
-    )
+    ) if 
 
     print(f'Loading manifest...')
     data = load_manifest(args.manifest_path)
